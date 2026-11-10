@@ -1,0 +1,23 @@
+{
+  "name": "pitchpad",
+  "version": "1.0.0",
+  "description": "Proposals your own Claude writes through MCP. Pitchpad saves them, lets you edit them, and keeps a live client link. No AI inside.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node smoke-test.js",
+    "check:no-ai": "node check-no-ai.js"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "@libsql/client": "0.17.4",
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "express": "5.2.1",
+    "zod": "3.25.76"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
